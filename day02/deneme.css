@@ -1,0 +1,30 @@
+h1{
+    color: blueviolet;
+    text-align: center;
+}
+p{
+    background-color: teal;
+}
+div{
+    text-align: center;
+}
+.div2{
+    font-size: xx-large;
+}
+/* comment line */
+a{
+    text-decoration: none; /* alt çizgiyi düzenler*/
+    font-style: italic;
+    font-weight: bolder;
+    border: 2px solid blue ;
+    border-width: 10px;
+    border-radius: 25%; 
+}
+/* cssmatic box shadow ile gölgelendirme yapılabilir
+text-shadow , box-shadow da kullanılabilir*/
+.shadow{
+    border: solid gray;
+    box-shadow: 5px 5px 0 0 red;
+}
+
+
