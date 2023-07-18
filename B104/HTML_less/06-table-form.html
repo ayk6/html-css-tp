@@ -77,17 +77,45 @@
     </table>
     <hr>
     <form>
-        <label>Email</label>
-        <input type="text">
+        <label for="mail">Email</label>
+        <input required type="text" id="mail">
         <input type="button" value="sign in">
     </form>
 
     <form method="post" action="/login">
         <input type="number">
         <input type="email">
-        <input type="password">
+        <input required minlength="4" type="password">
+        <input type="hidden" name="hidden">
+        <input type="checkbox" name="chckbx">
         <input type="submit" value="sbm">
         <input type="reset" value="reset">
+        <br>
+        <input type="radio" name="gender"> <label>m</label>
+        <input type="radio" name="gender"> <label>f</label>
+        <input type="file" name="" id=""> <br>
+        <input type="color" name="">
+        <input type="range">
+        <input type="date">
+        <input type="time">
+        <input type="datetime-local">
+        <br>
+        <select name="city">
+            <option disabled selected>select city</option>
+            <option value="ny">ny</option>
+            <option value="tx">tx</option>
+            <option value="abq">abq</option>
+        </select>
+        <br>
+        <select name="num" multiple>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+
+        <textarea name="" id="" cols="30" rows="5"></textarea>
+
     </form>
 
 
