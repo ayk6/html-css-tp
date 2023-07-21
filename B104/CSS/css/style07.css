@@ -1,0 +1,12 @@
+body {
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-family: 'Libre Baskerville', serif;
+}
+
+p.p2 {
+    text-decoration: line-through;
+    font-style: italic;
+}

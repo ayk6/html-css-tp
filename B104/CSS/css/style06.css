@@ -1,0 +1,14 @@
+.menu {
+    font-size: 1.5rem;
+    background-color: rgb(182, 181, 181);
+    text-align: center;
+    width: 4cm;
+}
+
+div {
+    height: 4cqmax;
+}
+
+.active {
+    background-color: rgb(114, 114, 114);
+}

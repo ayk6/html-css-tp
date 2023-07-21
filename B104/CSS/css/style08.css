@@ -1,0 +1,19 @@
+a:link {
+    color: rgb(27, 218, 218)
+        /* not visited links*/
+}
+
+a:visited {
+    color: #0400ff;
+}
+
+a:hover {
+    color: #39b812;
+    /* active link */
+}
+
+.hvr:hover {
+    background-color: black;
+    color: white;
+    cursor: grab;
+}

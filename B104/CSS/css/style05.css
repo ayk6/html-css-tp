@@ -1,0 +1,13 @@
+.header {
+    color: red;
+}
+
+h1 {
+    color: indigo;
+}
+
+h1.header {
+    color: cyan;
+}
+
+/* comment */
