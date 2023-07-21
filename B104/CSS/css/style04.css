@@ -1,0 +1,25 @@
+* {
+    font: 1em sans-serif;
+    color: rgb(146, 30, 255);
+}
+
+.cntr {
+    text-align: center;
+}
+
+.hglght {
+    color: rgb(212, 0, 212);
+}
+
+p.cntr {
+    color: #0aa812fb;
+}
+
+p {
+    color: rgb(43, 22, 231);
+}
+
+#p1 {
+    text-align: justify;
+    text-align: end;
+}

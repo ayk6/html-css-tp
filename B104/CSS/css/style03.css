@@ -1,0 +1,12 @@
+h1 {
+    font-size: 3rem;
+    color: #1a01fd;
+}
+
+mark {
+    background-color: rgb(210, 164, 253);
+}
+
+body {
+    background-color: aqua;
+}
