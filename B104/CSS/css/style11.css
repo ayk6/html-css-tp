@@ -1,0 +1,37 @@
+/* margin - outer space
+   padding - inner space */
+
+.box1 {
+    font-size: 2rem;
+    background-color: aqua;
+    margin: 50px;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.box2 {
+    font-size: 2rem;
+    background-color: blueviolet;
+    margin: 50px;
+    padding: 20px;
+    padding-left: 50px;
+}
+
+.box3 {
+    font-size: 2rem;
+    background-color: darkgray;
+    margin: 5px 60px 30px 100px;
+    /* top right bot left */
+    padding: 10px 40px;
+    /* vertical(tb)  horizonal(rl) */
+}
+
+/* cannot add height to the top or bottom padding or margin of an inline element. */
+.box4 {
+    font-size: 2rem;
+    background-color: darksalmon
+}
+
+em {
+    padding: 50px;
+}
