@@ -7,3 +7,12 @@ h1 {
 .info {
     text-align: center;
 }
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgb(255, 243, 226);
+    background-color: rgb(255, 0, 255);
+}
