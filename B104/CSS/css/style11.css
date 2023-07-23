@@ -35,3 +35,26 @@
 em {
     padding: 50px;
 }
+
+.prac {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: gray;
+    width: 4cm;
+}
+
+.mm-ul {
+    list-style-type: '🌵';
+
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    padding: 2px;
+}
+
+a:hover {
+    color: rgb(131, 185, 131);
+    background-color: rgb(95, 95, 95);
+}
