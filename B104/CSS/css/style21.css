@@ -1,0 +1,39 @@
+.title::first-letter {
+    font-size: 2em;
+    color: palevioletred;
+}
+
+.about::first-line {
+    background-color: aqua;
+}
+
+.about::selection {
+    background-color: blueviolet;
+}
+
+.list li::marker {
+    color: slateblue;
+    font-size: larger;
+}
+
+.title::before {
+    content: "<";
+    color: crimson;
+}
+
+.title::after {
+    content: ">";
+    color: crimson;
+}
+
+.about span::before {
+    content: "{";
+    color: crimson;
+    font-weight: bolder;
+}
+
+.about span::after {
+    content: "}";
+    color: crimson;
+    font-weight: bolder;
+}

@@ -7,6 +7,10 @@ nav.menu ul {
     display: none;
 }
 
+nav.menu {
+    display: inline-block;
+}
+
 nav.menu button {
     display: block;
 }
