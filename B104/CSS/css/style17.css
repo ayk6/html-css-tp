@@ -1,0 +1,14 @@
+.title {
+    background-color: aqua;
+    display: inline-block;
+    padding: 20px;
+}
+
+em {
+    background-color: blueviolet;
+    display: block;
+}
+
+div {
+    display: none;
+}

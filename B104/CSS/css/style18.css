@@ -1,0 +1,28 @@
+nav.main-menu ul {
+    text-align: center;
+    list-style-type: none;
+    margin-top: 0;
+}
+
+nav.main-menu li {
+    display: inline-block;
+    padding: 10px 0px;
+
+}
+
+nav.main-menu a {
+    color: #272727;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: large;
+    padding: 9px 20px;
+    background-color: rgb(145, 145, 145);
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+nav.main-menu a:hover {
+    text-decoration: underline;
+    color: #000;
+    background-color: rgb(124, 124, 124);
+
+}
