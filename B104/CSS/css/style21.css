@@ -37,3 +37,51 @@
     color: crimson;
     font-weight: bolder;
 }
+
+:root {
+    --color1: rgb(172, 172, 172);
+    --color2: rgb(143, 143, 143);
+    --color3: rgb(61, 61, 61);
+}
+
+nav.menu {
+    background-color: var(--color1);
+}
+
+nav.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav.menu li {
+    display: inline;
+}
+
+nav.menu li::after {
+    content: "|";
+    color: var(--color3);
+}
+
+nav.menu li:last-child::after {
+    content: "►";
+    color: var(--color3);
+}
+
+nav.menu ul:first-child::before {
+    content: "◄";
+}
+
+nav.menu li a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    color: var(--color3);
+}
+
+nav.menu li a:hover {
+    background-color: var(--color2);
+    color: black;
+    text-decoration: underline;
+}
