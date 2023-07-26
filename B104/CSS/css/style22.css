@@ -13,3 +13,20 @@ label {
     padding: 7px;
     border-radius: 3px;
 }
+
+ul>li {
+    list-style-type: none;
+}
+
+ul a {
+    color: rgb(58, 58, 58);
+}
+
+
+ul li::before {
+    font: var(--fa-font-solid);
+    content: "\f061";
+    margin-right: 5px;
+    font-size: 0.8rem;
+    color: rgb(75, 75, 75)
+}
