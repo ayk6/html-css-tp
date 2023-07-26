@@ -1,0 +1,11 @@
+.container {
+    display: flex;
+}
+
+.container div {
+    width: 60px;
+    align-items: stretch;
+    background-color: gray;
+    font-size: x-large;
+    align-items: center;
+}

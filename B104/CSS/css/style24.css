@@ -1,0 +1,26 @@
+.container {
+    height: 50vh;
+    border: 1px solid gray;
+    border-radius: 5px;
+    display: flex;
+    /* flex-direction: column; vertical */
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: stretch;
+    background-color: rgb(219, 219, 219);
+}
+
+.container div {
+    width: 60px;
+    align-items: stretch;
+    background-color: gray;
+    font-size: x-large;
+    border-radius: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container div:nth-child(even) {
+    background-color: darkgray;
+}
