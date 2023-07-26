@@ -1,11 +1,21 @@
 .container {
     display: flex;
+    gap: 2px;
+    height: 50vh;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
 .container div {
-    width: 60px;
-    align-items: stretch;
     background-color: gray;
     font-size: x-large;
-    align-items: center;
+    flex: 1 1 50px;
+    text-align: center;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+.container div:nth-child(odd) {
+    flex: 3 0 100px;
+    background-color: darkgray;
 }
