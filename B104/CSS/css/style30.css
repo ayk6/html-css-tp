@@ -1,0 +1,56 @@
+.box {
+    width: 150px;
+    height: 150px;
+}
+
+.box1 {
+    background-color: blue;
+    position: relative;
+    left: 200px;
+    top: 100px;
+}
+
+.box2 {
+    background-color: green;
+    position: relative;
+    left: 150px;
+}
+
+.parent {
+    height: 25vh;
+    background-color: turquoise;
+    position: relative;
+}
+
+.parent img {
+    position: absolute;
+    right: 50px;
+    bottom: 50px;
+}
+
+.input-box {
+    background-color: darkgray;
+    display: inline-block;
+    padding: 7px;
+    border-radius: 15px;
+    position: relative;
+    padding-right: 45px;
+}
+
+.input-box input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: 0px 10px;
+}
+
+.input-box button {
+    background-color: rgb(110, 110, 110);
+    border: none;
+    padding: 0px 10px;
+    border-radius: 15px;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    bottom: 2px;
+}
