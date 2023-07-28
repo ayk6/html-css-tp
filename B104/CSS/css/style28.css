@@ -1,0 +1,49 @@
+.box1 {
+    width: 500px;
+    border: 5px solid gray;
+    padding: 20px;
+    margin: 30px;
+}
+
+.box2 {
+    box-sizing: border-box;
+    width: 500px;
+    border: 5px solid gray;
+    padding: 20px;
+    margin: 30px;
+}
+
+body {
+    background-image: url("../img/light-live-background-css.jpg");
+    background-repeat: repeat-x;
+    background-position: center;
+}
+
+.banner {
+    background-image: url("../img/iPhone-14-Pro-wallpaper-mockup-hero-idownloadblog.jpg");
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.banner2 {
+    background-image: url("../img/iPhone-14-Pro-wallpaper-mockup-hero-idownloadblog.jpg");
+    height: 25vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgb(0, 128, 248);
+
+}
+
+.banner3 {
+    background-image: url("../img/iPhone-14-Pro-wallpaper-mockup-hero-idownloadblog.jpg");
+    height: 15vh;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: bottom;
+    color: rgb(0, 128, 248);
+    background-attachment: fixed;
+
+}

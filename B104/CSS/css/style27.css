@@ -1,0 +1,78 @@
+.border {
+    display: flex;
+    border: 2px solid gray;
+    gap: 5px;
+}
+
+.border div {
+    margin: 10px;
+    flex: 1;
+    border: 2px dotted blue;
+    text-align: center;
+    padding: 10px;
+}
+
+.border2 {
+    display: flex;
+    border: 2px solid darkmagenta;
+    border-radius: 10px;
+    gap: 5px;
+}
+
+.border2 div {
+    margin: 10px;
+    flex: 1;
+    border-right: 2px dashed royalblue;
+    border-left: 2px dashed royalblue;
+    text-align: center;
+    padding: 10px;
+}
+
+.border3 {
+    border: 2px solid yellowgreen;
+    padding: 15px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 5px;
+}
+
+:root {
+    --color1: rgb(14, 0, 145);
+    --color2: rgb(0, 110, 255);
+}
+
+.button-group {
+    width: 307px;
+    border-radius: 10px;
+    display: flex;
+    background-color: var(--color1);
+    gap: 2px;
+    padding: 10px;
+}
+
+.button-group>button {
+    background-color: var(--color1);
+    color: var(--color2);
+    padding: 10px 15px;
+    border: 3px solid var(--color2);
+    flex: 0 1 100px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.button-group>button:first-child {
+    border-radius: 30px 14px 14px 30px;
+}
+
+.button-group>button:last-child {
+    border-radius: 14px 30px 30px 14px;
+}
+
+.button-group>button:hover {
+    background-color: var(--color2);
+    color: var(--color1);
+    cursor: pointer;
+}
