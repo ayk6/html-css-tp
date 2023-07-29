@@ -54,3 +54,16 @@
     top: 2px;
     bottom: 2px;
 }
+
+nav.menu {
+    background-color: rgba(64, 224, 208, 0.589);
+    position: fixed;
+    right: 10px;
+    left: 10px;
+}
+
+.price-list thead {
+    background-color: darkgray;
+    position: sticky;
+    top: 0px;
+}
