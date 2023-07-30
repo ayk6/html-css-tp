@@ -3,12 +3,14 @@ body {
     margin: 0;
 }
 
+/* BANNER */
 section.banner {
     background-image: url("../img/Marketing_LandingFeatured_Redesign_Mobile.webp");
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
 }
 
 @media screen and (min-width:560px) {
@@ -16,6 +18,8 @@ section.banner {
         background-image: url("../img/Marketing_LandingFeatured_Redesign.webp");
     }
 }
+
+/* TOPBAR */
 
 .topbar {
     display: flex;
@@ -51,6 +55,8 @@ section.banner {
 .topbar .logo-mobile {
     width: 130px;
     height: auto;
+    position: relative;
+    z-index: 3;
 }
 
 .topbar ul {
@@ -85,4 +91,141 @@ section.banner {
         display: none;
     }
 
+    .side-menu2 {
+        display: none;
+    }
+
+}
+
+/* SIDE MENU */
+
+.checkbox {
+    display: none;
+}
+
+nav.side-menu {
+    position: fixed;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgb(22, 22, 22);
+    padding: 25px 20px 0 20px;
+    color: darkgray;
+    width: 100%;
+    transform: translateX(100%);
+    transition: transform 1s;
+    z-index: 2;
+}
+
+@media screen and (min-width:560px) {
+    nav.side-menu {
+        left: auto;
+        width: 200px;
+    }
+}
+
+.side-menu label i {
+    margin: 20px 0 0 20px;
+    font-size: 1.5rem;
+}
+
+nav.side-menu ul {
+    text-decoration: none;
+    list-style: none;
+    margin: 0;
+    padding: 5px 0 0 20px;
+    line-height: 30px;
+}
+
+.side-menu1 li {
+    line-height: 35px;
+}
+
+.side-menu1 li a {
+    text-decoration: none;
+    font-weight: bolder;
+    color: rgb(230, 230, 230);
+    font-size: 0.8rem;
+}
+
+.side-menu2 li a {
+    text-decoration: none;
+    color: darkgray;
+    font-size: 0.8rem;
+}
+
+.side-menu2 li:first-child a {
+    font-weight: bolder;
+    color: rgb(230, 230, 230);
+}
+
+
+.checkbox:checked+nav.side-menu {
+    transform: translateX(0);
+}
+
+.banner::after {
+    content: "";
+    transition: background-color 1s;
+}
+
+.checkbox:checked~.banner::after {
+    background-color: rgba(255, 255, 255, 0.267);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+}
+
+label[for="chckbox"] {
+    cursor: pointer;
+}
+
+/* CONTENT */
+:root {
+    --textColor: rgb(236, 236, 236);
+}
+
+.content {
+    color: var(--textColor);
+    text-align: center;
+}
+
+.content h1 {
+    font-size: 2.5rem;
+    margin: 10px 0 20px 0;
+}
+
+.content p {
+    position: absolute;
+    font-size: smaller;
+    font-weight: 300;
+    max-width: 465px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ORDER FORM */
+
+.order-form div,
+a {
+    color: var(--textColor);
+    text-align: center;
+}
+
+.order-form {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.order-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
