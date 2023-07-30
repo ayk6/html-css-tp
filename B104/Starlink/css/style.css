@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+* {
+    box-sizing: border-box;
+}
+
 /* BANNER */
 section.banner {
     background-image: url("../img/Marketing_LandingFeatured_Redesign_Mobile.webp");
@@ -13,7 +17,7 @@ section.banner {
     position: relative;
 }
 
-@media screen and (min-width:560px) {
+@media screen and (min-width:680px) {
     section.banner {
         background-image: url("../img/Marketing_LandingFeatured_Redesign.webp");
     }
@@ -50,6 +54,8 @@ section.banner {
 
 .top-right li:last-child a {
     font-size: 1.5rem;
+    color: var(--textColor);
+    opacity: 0.7;
 }
 
 .topbar .logo-mobile {
@@ -111,15 +117,16 @@ nav.side-menu {
     top: 0;
     bottom: 0;
     background-color: rgb(22, 22, 22);
-    padding: 25px 20px 0 20px;
+    padding: 15px 0 0 20px;
     color: darkgray;
     width: 100%;
     transform: translateX(100%);
     transition: transform 1s;
     z-index: 2;
+    overflow: scroll;
 }
 
-@media screen and (min-width:560px) {
+@media screen and (min-width:630px) {
     nav.side-menu {
         left: auto;
         width: 200px;
@@ -222,10 +229,140 @@ a {
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
+    text-align: center;
+    width: 80%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 7px;
 }
 
 .order-form form {
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+@media screen and (min-width: 680px) {
+    .order-form form {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.order-form .txt {
+    background-color: rgba(245, 245, 245, 0.267);
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: var(--textColor);
+    border: 1px solid var(--textColor);
+    font-size: 0.5rem;
+    flex: 5;
+}
+
+.order-form .txt::placeholder {
+    color: rgb(202, 202, 202);
+}
+
+.order-form .btn {
+    padding: 10px;
+    border-radius: 3px;
+    background-color: var(--textColor);
+    border: 1px solid var(--textColor);
+    font-size: 0.5rem;
+    font-weight: bold;
+    flex: 2;
+}
+
+.order-form .map a {
+    text-decoration: none;
+    font-size: 0.6rem;
+    font-weight: bold;
+}
+
+.order-form .priv {
+    font-size: 0.45rem;
+    color: gray;
+}
+
+.order-form .priv a {
+    font-size: 0.5rem;
+    color: darkgray;
+}
+
+/* MAIN */
+
+main>section {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: var(--textColor);
+    margin: 0;
+}
+
+main img {
+    object-fit: cover;
+    width: 100%;
+    height: 330px;
+}
+
+@media screen and (min-width: 960px) {
+    main>section {
+        flex-direction: row;
+    }
+
+    main img {
+        object-fit: cover;
+        height: 100vh;
+    }
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+main>section>div {
+    flex: 1 0 50%;
+}
+
+main>section>div:last-child {
+    padding: 10px 100px;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media screen and (min-width: 630px) {
+    main>section>div:last-child {
+        padding: 10px 30%;
+        padding-bottom: 50px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    main>section>div:last-child {
+        padding: 50px 13% 50px 50px;
+        align-items: flex-start;
+    }
+
+    main>section {
+        font-size: 1.3rem;
+    }
+}
+
+main>section p {
+    font-size: 0.6rem;
+    font-weight: 300;
+}
+
+main>section button {
+    background-color: black;
+    color: var(--textColor);
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    font-size: 0.6rem;
+    padding: 10px 50px;
 }
