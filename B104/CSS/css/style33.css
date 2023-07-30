@@ -1,0 +1,12 @@
+.title {
+    color: aliceblue;
+    text-shadow: 1px 1px 3px rgb(78, 78, 78), 3px 3px 3px rgb(126, 171, 255);
+}
+
+.title2 {
+    color: turquoise;
+    display: inline-block;
+    padding: 2px 5px;
+    border-radius: 7px;
+    box-shadow: 0px 0px 5px 4px rgb(126, 171, 255);
+}
