@@ -194,7 +194,7 @@ label[for="chckbox"] {
 
 /* CONTENT */
 :root {
-    --textColor: rgb(236, 236, 236);
+    --textColor: rgb(255, 255, 255);
 }
 
 .content {
@@ -205,6 +205,7 @@ label[for="chckbox"] {
 .content h1 {
     font-size: 2.5rem;
     margin: 10px 0 20px 0;
+    word-break: break-all;
 }
 
 .content p {
@@ -300,6 +301,7 @@ main>section {
     background-color: black;
     color: var(--textColor);
     margin: 0;
+    position: relative;
 }
 
 main img {
@@ -365,4 +367,234 @@ main>section button {
     border-radius: 3px;
     font-size: 0.6rem;
     padding: 10px 50px;
+    font-weight: bold;
+}
+
+/* TRAVEL */
+
+section.trv {
+    display: block;
+    background-image: url("../img/Marketing_LandingTravel_Redesign3.webp");
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-position: center;
+    background-size: auto 100vh;
+}
+
+section.trv button {
+    background-color: rgba(245, 245, 245, 0.021);
+    font-weight: bolder;
+    margin-top: 15%;
+}
+
+section.trv div {
+    position: relative;
+}
+
+@media screen and (min-width: 960px) {
+    section.trv {
+        background-size: cover;
+    }
+
+    section.trv div {
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        width: 50%;
+        justify-content: center;
+    }
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (min-width: 960px) {
+    .buttons {
+        flex-direction: row;
+        gap: 10px;
+    }
+}
+
+section.quotes {
+    background-color: rgb(34, 34, 34);
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    padding: 15vh 5vh;
+
+}
+
+section.quotes ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+}
+
+.quotes ul li {
+    font-size: small;
+    font-weight: 300;
+    padding: 10px;
+}
+
+@media screen and (min-width: 630px) {
+    section.quotes ul {
+        flex-direction: row;
+        font-size: medium;
+    }
+
+    .quotes ul li {
+        padding: 15px;
+    }
+
+    section.quotes {
+        padding: 17vh 13vh;
+    }
+}
+
+/* BOTTOM */
+.line-spacer span {
+    display: block;
+    height: 150px;
+    width: 1px;
+    background-color: whitesmoke;
+    margin: 30px auto;
+}
+
+section.mail {
+    text-align: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+section.mail div {
+    font-size: x-small;
+}
+
+section.mail .mbform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+section.mail .mbform .txt {
+    position: relative;
+    background-color: rgba(245, 245, 245, 0.151);
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: var(--textColor);
+    border: 2px solid gray;
+    font-size: 0.5rem;
+    max-width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    outline: none;
+}
+
+@media screen and (min-width: 630px) {
+
+    section.mail .mbform .txt,
+    section.mail .mbform .btn {
+        max-width: 40%;
+    }
+}
+
+
+.mail .btn {
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 0.5rem;
+    max-width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgb(80, 80, 80);
+    border: 2px solid rgb(82, 82, 82);
+    font-weight: bold;
+}
+
+.mail .priv {
+    font-size: 0.45rem;
+    color: gray;
+}
+
+.mail .priv a {
+    font-size: 0.5rem;
+    color: rgb(214, 214, 214);
+}
+
+@media screen and (min-width: 960px) {
+    section.mail .mbform {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    section.mail .mbform .txt {
+        left: 45%;
+        width: 20%;
+    }
+
+    section.mail .mbform .btn {
+        left: 40%;
+        width: 10%;
+    }
+
+}
+
+footer.ftr {
+    display: flex;
+    background-color: black;
+    color: rgb(128, 128, 128);
+    flex-direction: column;
+    text-align: center;
+    font-size: xx-small;
+    font-weight: 300;
+    padding-bottom: 15px;
+    gap: 4px;
+}
+
+footer div a,
+footer div span {
+    color: rgb(230, 230, 230);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 630px) {
+    footer.ftr {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .ftr div {
+        flex: 1;
+    }
+}
+
+footer div span a {
+    padding: 5px;
+}
+
+.up {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: rgba(136, 136, 136, 0.384);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.up a {
+    color: black;
 }
