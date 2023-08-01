@@ -1,0 +1,15 @@
+:root {
+    --primary: rgb(9, 255, 0);
+}
+
+.text-primary {
+    color: var(--primary) !important;
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
+
+.link-primary {
+    color: var(--primary) !important;
+}
