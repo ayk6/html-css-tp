@@ -1,0 +1,25 @@
+.features {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.features .card-footer {
+    display: flex;
+    justify-content: space-around;
+    color: whitesmoke;
+}
+
+.features .card-footer>div {
+    border-right: 1px solid whitesmoke;
+    flex: 1;
+}
+
+.features .card-footer>div:last-child {
+    border-right: none;
+}
+
+@media screen and (min-width:768px) {
+    .features div:nth-child(2) .card {
+        transform: scale(1.1);
+    }
+}
