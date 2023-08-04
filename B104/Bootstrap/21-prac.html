@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav Tabs Prac</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+</head>
+
+<body class="pt-5 px-4">
+    <div class="d-flex align-items-start">
+        <ul class="nav nav-pills flex-column">
+            <li class="nav-item"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-1"
+                    type="button">Nature</button>
+            </li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-2"
+                    type="button">Horse</button>
+            </li>
+            <li class="nav-item"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-3"
+                    type="button">Cars</button>
+            </li>
+            <li class="nav-item"><button class="nav-link disabled" data-bs-toggle="pill" data-bs-target="#pills-4"
+                    type="button">Disabled</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-1" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <div class="row">
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-2" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1553284965-fa61e9ad4795?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1584237863847-b21b4f7ccd4f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=998&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1553284965-e2815db2e5a0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://plus.unsplash.com/premium_photo-1664362416625-3dd91292ca91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-3" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
+                <div class="row">
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://plus.unsplash.com/premium_photo-1669842069755-cfba5f2f677d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://plus.unsplash.com/premium_photo-1673292293042-cafd9c8a3ab3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80"
+                            alt="">
+                    </div>
+                    <div class="col-sm-2 col-md-3 col-lg-4">
+                        <img class="img-thumbnail"
+                            src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80"
+                            alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                tabindex="0">...</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

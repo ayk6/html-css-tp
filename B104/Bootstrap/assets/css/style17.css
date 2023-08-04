@@ -1,0 +1,23 @@
+.carousel,
+.carousel>.carousel-inner,
+.carousel-inner>.carousel-item {
+    background-color: aqua;
+    height: 100vh;
+}
+
+.navbar {
+    background-color: rgba(245, 245, 245, 0.336);
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.carousel-caption {
+    bottom: auto;
+    top: 50%;
+    transform: translateY(-50%);
+}
